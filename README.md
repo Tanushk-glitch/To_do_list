@@ -4,5 +4,5 @@ This project focuses on core Python concepts such as variables, lists/dictionari
 Add new tasks<br>
 View all tasks<br>
 Mark tasks as completed<br>
-Edit or delete tasks<br>
+Edit or delete tasks ffgfs<br>
 Save and load tasks using a file<br> 
