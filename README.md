@@ -1,8 +1,49 @@
-The Python To-Do List project is a beginner-friendly application designed to help users create, manage, and track their daily tasks efficiently.<br> It allows users to add, view, update, and delete tasks, making it a practical project to understand real-world problem solving using Python.<br>
-This project focuses on core Python concepts such as variables, lists/dictionaries, loops, conditional statements, and functions.<br> Depending on the implementation level, it can be built as a command-line application or enhanced with file handling to save tasks permanently.<br>
-🔧 Key Features<br>
-Add new tasks<br>
-View all tasks<br>
-Mark tasks as completed<br>
-Edit or delete tasks ffgfs<br>
-Save and load tasks using a file<br> 
+## 📝 Python To-Do List Application
+
+The **Python To-Do List** project is a beginner-friendly application designed to help users **create, manage, and track daily tasks efficiently**. It provides a practical way to understand how Python can be used to solve real-world problems through structured programming.
+
+This project allows users to add, view, update, and delete tasks, making it an ideal introduction to task management systems and basic application logic.
+
+---
+
+## 🎯 Project Objective
+
+To build a simple yet effective task management application while strengthening fundamental Python programming skills and problem-solving techniques.
+
+---
+
+## 🧠 Concepts Covered
+
+This project focuses on core Python concepts, including:
+- Variables and data types  
+- Lists and dictionaries  
+- Loops and conditional statements  
+- Functions and modular code design  
+- File handling for data persistence (optional enhancement)
+
+The application can be implemented as a **command-line interface (CLI)** and extended to store tasks permanently using files.
+
+---
+
+## 🔧 Key Features
+
+- Add new tasks  
+- View all existing tasks  
+- Mark tasks as completed  
+- Edit or delete tasks  
+- Save and load tasks using a file  
+
+---
+
+## 🛠️ Technology Used
+
+- **Language:** Python  
+- **Interface:** Command Line (CLI)
+
+---
+
+## 👨‍💻 Author
+
+**Tanushk Barnawal**  
+📧 Email: **baranwaltanushk@gmail.com**  
+🌐 GitHub: **https://github.com/Tanushk-glitch**
