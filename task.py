@@ -1,43 +1,55 @@
-
 def add_task(tasks):
     task = input("Enter a new task: ")
     tasks.append(task)
     save_tasks(tasks)
-    print("Task added.")
+    print("Task added.\n")
+
 
 def view_tasks(tasks):
     if not tasks:
-        print("No tasks available.")
+        print("No tasks available.\n")
     else:
         print("Tasks:")
         for idx, task in enumerate(tasks, start=1):
             print(f"{idx}. {task}")
+        print()
+
 
 def save_tasks(tasks):
-    with open("list.txt", 'w') as f:
+    with open("list.txt", "w") as f:
         for task in tasks:
-            f.write(task + '\n')
-    print("Tasks saved to", "list.txt")
+            f.write(task + "\n")
+    print("Tasks saved to list.txt\n")
+
 
 def load_tasks():
     tasks = []
     try:
-        with open("list.txt", 'r') as f:
+        with open("list.txt", "r") as f:
             tasks = [line.strip() for line in f.readlines()]
     except FileNotFoundError:
-        print("No saved tasks found.")
+        print("No saved tasks found.\n")
     return tasks
 
+
 def delete_task(tasks):
+    if not tasks:
+        print("No tasks to delete.\n")
+        return
+
     view_tasks(tasks)
+
     try:
         num = int(input("Enter task number to delete: "))
-        tasks.pop(num-1)
-        save_tasks(tasks)
-        print("Task deleted!\n")
-    except:
-        print("Invalid choice.\n")
-    
+        if 1 <= num <= len(tasks):
+            tasks.pop(num - 1)
+            save_tasks(tasks)
+            print("Task deleted!\n")
+        else:
+            print("Invalid task number.\n")
+    except ValueError:
+        print("Please enter a valid number.\n")
+
 
 def main():
     tasks = load_tasks()
@@ -45,24 +57,25 @@ def main():
     while True:
         print("----- TO-DO LIST -----")
         print("1. Add Task")
-        print("2. View Tasks") 
+        print("2. View Tasks")
         print("3. Delete Task")
         print("4. Save and Exit")
 
         choice = input("Enter your choice: ")
-geg
+
         if choice == "1":
             add_task(tasks)
         elif choice == "2":
             view_tasks(tasks)
         elif choice == "3":
-          delete_task(tasks)
+            delete_task(tasks)
         elif choice == "4":
             save_tasks(tasks)
             print("Tasks saved. Goodbye!")
             break
         else:
             print("Invalid choice.\n")
+
 
 if __name__ == "__main__":
     main()
