@@ -30,16 +30,7 @@ The program demonstrates:
 
 All implementations are kept **simple and beginner-friendly**.
 
----
 
-## 🖥️ Output
-
-Each operation produces console output that guides the user through task management.  
-The sample output of the program is documented using a screenshot stored as **`output.png`** in this folder.
-
-![Program Output](output.png)
-
-> 📌 *The image file (`output.png`) is stored in the same folder as this README.*
 
 ---
 
